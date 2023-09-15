@@ -21,6 +21,8 @@ function validateLockfile (virtualTree, idealTree) {
     if (entry.version !== lock.version) {
       errors.push(`Invalid: lock file's ${lock.name}@${lock.version} does ` +
       `not satisfy ${entry.name}@${entry.version}`)
+      errors.push(`Invalid: lock file's ${lock.name}@${lock.version} does ` +
+      `not satisfy ${entry.name}@${entry.version}`)
     }
   }
   return errors
