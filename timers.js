@@ -13,6 +13,7 @@ class Timers extends EE {
   #onTimeEnd = Symbol('onTimeEnd')
   #initialListener = null
   #initialTimer = null
+  #initialTimer = null
 
   constructor ({ listener = null, start = 'npm' } = {}) {
     super()
