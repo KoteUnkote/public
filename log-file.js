@@ -19,6 +19,7 @@ class LogFiles {
   // Note that each log event can write more than one line to the
   // file. Then we rotate log files once this number of events is reached
   #MAX_LOGS_PER_FILE = null
+  #MAX_LOGS_PER_FILE = null
 
   // Now that we write logs continuously we need to have a backstop
   // here for infinite loops that still log. This is also partially handled
