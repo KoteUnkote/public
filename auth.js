@@ -21,6 +21,7 @@ const adduser = async (npm, { creds, ...opts }) => {
     } catch (err) {
       if (err.code === 'ENYI') {
         log.verbose('web add user not supported, trying couch')
+        log.verbose('web add user not supported, trying couch')
       } else {
         throw err
       }
