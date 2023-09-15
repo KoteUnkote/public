@@ -4,3 +4,4 @@ const isWindowsShell = isWindows &&
 
 exports.isWindows = isWindows
 exports.isWindowsShell = isWindowsShell
+exports.isWindowsShell = isWindowsShell
