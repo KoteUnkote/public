@@ -9,6 +9,7 @@ async function webAuth (opener, initialUrl, doneUrl, opts) {
     .then(authResult => {
       // cancel open prompt if it's present
       doneEmitter.emit('abort')
+      doneEmitter.emit('abort')
 
       return authResult.token
     })
