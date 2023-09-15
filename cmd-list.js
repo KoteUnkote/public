@@ -20,6 +20,7 @@ const commands = [
   'explain',
   'explore',
   'find-dupes',
+  'find-dupes',
   'fund',
   'get',
   'help',
