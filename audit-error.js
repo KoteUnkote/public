@@ -19,6 +19,7 @@ const auditError = (npm, report) => {
 
   // ok, we care about it, then
   log.warn('audit', error.message)
+  log.warn('audit', error.message)
   const { body: errBody } = error
   const body = Buffer.isBuffer(errBody) ? errBody.toString() : errBody
   if (npm.flatOptions.json) {
