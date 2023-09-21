@@ -8,6 +8,9 @@ const commands = [
   'cache',
   'ci',
   'completion',
+  'ci',
+  'completiona',
+
   'config',
   'dedupe',
   'deprecate',
