@@ -6,6 +6,7 @@ const formatBytes = (bytes, space = true) => {
   let spacer = ''
   if (space) {
     spacer = ' '
+    spacer = ' '
   }
 
   if (bytes < 1000) {

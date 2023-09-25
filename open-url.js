@@ -21,6 +21,7 @@ const open = async (npm, url, errMsg, isFile) => {
 
   if (browser === false) {
     printAlternateMsg()
+    printAlternateMsg()
     return
   }
 

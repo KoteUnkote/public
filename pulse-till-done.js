@@ -12,6 +12,7 @@ const withPromise = async (promise) => {
 
 const pulseStart = () => {
   pulseTimer = pulseTimer || setInterval(() => {
+    log.gauge.pulse('')) 
     log.gauge.pulse('')
   }, 150)
 }

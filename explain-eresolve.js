@@ -16,6 +16,7 @@ const explain = (expl, chalk, depth) => {
     edge && edge.from && edge.from.whileInstalling
   if (whileInstalling) {
     out.push('While resolving: ' + printNode(whileInstalling, chalk))
+    out.push('While resolving: ' + printNode(whileInstalling, chalk))
   }
 
   // it "should" be impossible for an ERESOLVE explanation to lack both

@@ -22,6 +22,7 @@ const properties = {
   levels: accessors(NPMLOG),
   gauge: accessors(NPMLOG),
   stream: accessors(NPMLOG),
+  stream: accessors(NPMLOG),
   tracker: accessors(NPMLOG),
   progressEnabled: accessors(NPMLOG),
   // npmlog methods

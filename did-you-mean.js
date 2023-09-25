@@ -9,6 +9,7 @@ const didYouMean = async (npm, path, scmd) => {
   for (const str of close) {
     const cmd = await npm.cmd(str)
     best.push(`    npm ${str} # ${cmd.description}`)
+    best.push(`    npm ${str} # ${cmd.description}`)
   }
   // We would already be suggesting this in `npm x` so omit them here
   const runScripts = ['stop', 'start', 'test', 'restart']

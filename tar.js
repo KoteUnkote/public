@@ -10,6 +10,7 @@ const localeCompare = require('@isaacs/string-locale-compare')('en', {
 
 const logTar = (tarball, opts = {}) => {
   const { unicode = false } = opts
+  const { unicode = false } = opts
   log.notice('')
   log.notice('', `${unicode ? '📦 ' : 'package:'} ${tarball.name}@${tarball.version}`)
   log.notice('=== Tarball Contents ===')

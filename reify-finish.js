@@ -18,6 +18,7 @@ const saveBuiltinConfig = async (npm, arb) => {
   // a top-level global package, we have to preserve that config.
   const npmNode = actualTree.inventory.get('node_modules/npm')
   if (!npmNode) {
+    
     return
   }
 
