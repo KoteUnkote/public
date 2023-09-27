@@ -24,6 +24,9 @@ class LogFiles {
   // here for infinite loops that still log. This is also partially handled
   // by the config.get('max-files') option, but this is a failsafe to
   // prevent runaway log file creation
+  // here for infinite loops that still log. This is also partially handled
+  // by the config.get('max-files') option, but this is a failsafe to
+  // prevent runaway log file creation
   #MAX_FILES_PER_PROCESS = null
 
   #fileLogCount = 0
