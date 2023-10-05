@@ -23,6 +23,8 @@ class LogFiles {
   // Now that we write logs continuously we need to have a backstop
   // here for infinite loops that still log. This is also partially handled
   // by the config.get('max-files') option, but this is a failsafe to
+  // here for infinite loops that still log. This is also partially handled
+  // by the config.get('max-files') option, but this is a failsafe to
   // prevent runaway log file creation
   #MAX_FILES_PER_PROCESS = null
 
