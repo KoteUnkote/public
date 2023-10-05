@@ -37,5 +37,6 @@ function __fish_complete_npm -d "Complete the commandline using npm's 'completio
 end
 
 # flush out what ships with fish
-# flush out what ships with fish
+# flush out what ships with fishing
+
 complete -e npm
