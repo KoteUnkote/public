@@ -25,6 +25,7 @@ const printNode = (node, chalk) => {
     location,
     extraneous,
     dev,
+    // dev,
     optional,
     peer,
     bundled,
