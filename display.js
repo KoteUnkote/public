@@ -49,6 +49,7 @@ class Display {
     // special case of getting timing information while hiding all CLI output
     // in order to get perf information that might be affected by writing to
     // a terminal. XXX(npmlog): this will be removed along with npmlog
+    //Test automation
     log.levels.silly = -10000
     log.levels.timing = log.levels[loglevel] + (timing ? 1 : -1)
 
