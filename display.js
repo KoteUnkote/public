@@ -3,8 +3,10 @@ const npmlog = require('npmlog')
 const log = require('./log-shim.js')
 const { explain } = require('./explain-eresolve.js')
 
+
 class Display {
   #chalk = null
+
 
   constructor () {
     // pause by default until config is loaded
@@ -12,9 +14,11 @@ class Display {
     log.pause()
   }
 
+
   on () {
     process.on('log', this.#logHandler)
   }
+
 
   off () {
     process.off('log', this.#logHandler)
@@ -24,6 +28,7 @@ class Display {
     // this removes the event emitter listener warnings
     log.tracker.removeAllListeners()
   }
+
 
   load (config) {
     const {
@@ -37,7 +42,9 @@ class Display {
       heading = 'npm',
     } = config
 
+
     this.#chalk = chalk
+
 
     // npmlog is still going away someday, so this is a hack to dynamically
     // set the loglevel of timing based on the timing flag, instead of making
@@ -49,11 +56,14 @@ class Display {
     // special case of getting timing information while hiding all CLI output
     // in order to get perf information that might be affected by writing to
     // a terminal. XXX(npmlog): this will be removed along with npmlog
+    //Test automation
     log.levels.silly = -10000
     log.levels.timing = log.levels[loglevel] + (timing ? 1 : -1)
 
+
     log.level = loglevel
     log.heading = heading
+
 
     if (color) {
       log.enableColor()
@@ -61,11 +71,13 @@ class Display {
       log.disableColor()
     }
 
+
     if (unicode) {
       log.enableUnicode()
     } else {
       log.disableUnicode()
     }
+
 
     // if it's silent, don't show progress
     if (progress && !silent) {
@@ -74,13 +86,16 @@ class Display {
       log.disableProgress()
     }
 
+
     // Resume displaying logs now that we have config
     log.resume()
   }
 
+
   log (...args) {
     this.#logHandler(...args)
   }
+
 
   #logHandler = (level, ...args) => {
     try {
@@ -96,15 +111,18 @@ class Display {
     }
   }
 
+
   #log (...args) {
     return this.#eresolveWarn(...args) || this.#npmlog(...args)
   }
+
 
   // Explicitly call these on npmlog and not log shim
   // This is the final place we should call npmlog before removing it.
   #npmlog (level, ...args) {
     npmlog[level](...args)
   }
+
 
   // Also (and this is a really inexcusable kludge), we patch the
   // log.warn() method so that when we see a peerDep override
@@ -123,4 +141,6 @@ class Display {
   }
 }
 
+
 module.exports = Display
+
