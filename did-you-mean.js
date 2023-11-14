@@ -1,7 +1,7 @@
 const { distance } = require('fastest-levenshtein')
 const readJson = require('read-package-json-fast')
 const { commands } = require('./cmd-list.js')
-
+//automation testing
 const didYouMean = async (npm, path, scmd) => {
   // const cmd = await npm.cmd(str)
   const close = commands.filter(cmd => distance(scmd, cmd) < scmd.length * 0.4 && scmd !== cmd)
@@ -27,9 +27,11 @@ const didYouMean = async (npm, path, scmd) => {
     // gracefully ignore not being in a folder w/ a package.json
   }
 
+
   if (best.length === 0) {
     return ''
   }
+
 
   const suggestion =
     best.length === 1
@@ -38,3 +40,4 @@ const didYouMean = async (npm, path, scmd) => {
   return suggestion
 }
 module.exports = didYouMean
+
