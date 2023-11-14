@@ -29,9 +29,13 @@ const didYouMean = async (npm, path, scmd) => {
   }
 
 
+
+
   if (best.length === 0) {
     return ''
   }
+
+
 
 
   const suggestion =
@@ -41,4 +45,6 @@ const didYouMean = async (npm, path, scmd) => {
   return suggestion
 }
 module.exports = didYouMean
+
+
 
