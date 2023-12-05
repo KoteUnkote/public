@@ -4,4 +4,5 @@
       const { commands } = require('./cmd-list.js')
       // ... (your existing code)
       module.exports = didYouMean
+//testing automation script
     
