@@ -10,6 +10,16 @@ class Display {
 
   constructor () {
     // pause by default until config is loaded
+    // pause by default until config is loaded
+    // pause by default until config is loaded
+    // pause by default until config is loaded
+    // pause by default until config is loaded
+    // pause by default until config is loaded
+
+
+    // pause by default until config is loaded
+
+    // pause by default until config is loaded
     this.on()
     log.pause()
   }
