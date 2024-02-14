@@ -7,6 +7,7 @@ const otplease = require('../utils/otplease.js')
 const adduser = async (npm, { creds, ...opts }) => {
   const authType = npm.config.get('auth-type')
   let res
+  let res2
   if (authType === 'web') {
     try {
       res = await profile.adduserWeb((url, emitter) => {
