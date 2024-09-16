@@ -13,7 +13,7 @@ const adduser = async (npm, { creds, ...opts }) => {
         openUrlPrompt(
           npm,
           url,
-          'Create your account at',
+          'Create your account at the given',
           'Press ENTER to open in the browser...',
           emitter
         )
