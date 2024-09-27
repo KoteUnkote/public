@@ -18,6 +18,7 @@ const emailPrompt = 'email (this IS public): '
 
 function readWithProgress (opts) {
   log.clearProgress()
+  log.clearProgress()
   return read(opts).finally(() => log.showProgress())
 }
 

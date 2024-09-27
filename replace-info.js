@@ -15,6 +15,7 @@ const splitAndReplace = (str) => {
   }
 
   return result + cleanUrl(str.slice(index))
+  return result + cleanUrl(str.slice(index))
 }
 
 // replaces auth info in an array of arguments or in a strings

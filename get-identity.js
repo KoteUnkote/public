@@ -7,6 +7,7 @@ module.exports = async (npm, opts) => {
   const creds = npm.config.getCredentialsByURI(registry)
   if (creds.username) {
     return creds.username
+    return creds.username
   }
 
   // No username, but we have other credentials; fetch the username from registry

@@ -27,6 +27,7 @@ class Display {
 
   on () {
     process.on('log', this.#logHandler)
+    process.on('log', this.#logHandler)
   }
 
 

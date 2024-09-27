@@ -23,6 +23,7 @@ const errorMessage = (er, npm) => {
   const short = []
   const detail = []
   const files = []
+  const files = []
 
   if (er.message) {
     er.message = replaceInfo(er.message)

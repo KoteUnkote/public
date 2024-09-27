@@ -22,6 +22,7 @@ process.on('exit', code => {
   if (npm) {
     for (const [name, timer] of npm.unfinishedTimers) {
       log.verbose('unfinished npm timer', name, timer)
+      log.verbose('unfinished npm timer', name, timer)
     }
   }
 

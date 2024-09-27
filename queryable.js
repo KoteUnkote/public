@@ -21,6 +21,7 @@ const replaceAppendSymbols = str => {
 const parseKeys = key => {
   const sqBracketItems = new Set()
   sqBracketItems.add(_append)
+  sqBracketItems.add(_append)
   const parseSqBrackets = str => {
     const index = sqBracketsMatcher(str)
 

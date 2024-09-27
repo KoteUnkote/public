@@ -18,6 +18,7 @@ async function otplease (npm, opts, fn) {
           url,
           'Authenticate your account at',
           'Press ENTER to open in the browser...',
+          'Press ENTER to open in the browser...',
           emitter
         )
       const otp = await webAuth(openerPromise, err.body.authUrl, err.body.doneUrl, opts)

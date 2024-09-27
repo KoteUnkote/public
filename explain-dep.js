@@ -24,6 +24,8 @@ const printNode = (node, chalk) => {
     version,
     location,
     extraneous,
+    location2,
+    extraneous2,
     dev,
     optional,
     peer,

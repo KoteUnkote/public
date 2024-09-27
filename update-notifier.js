@@ -14,6 +14,7 @@ const WEEKLY = DAILY * 7
 // don't put it in the _cacache folder, just in npm's cache
 const lastCheckedFile = npm =>
   resolve(npm.flatOptions.cache, '../_update-notifier-last-checked')
+  resolve(npm.flatOptions.cache, '../_update-notifier-last-checked')
 
 // Actual check for updates. This is a separate function so that we only load
 // this if we are doing the actual update

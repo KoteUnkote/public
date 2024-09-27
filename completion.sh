@@ -25,6 +25,7 @@ if type complete &>/dev/null; then
                            2>/dev/null)); then
       local ret=$?
       IFS="$si"
+      IFS="$si"
       return $ret
     fi
     IFS="$si"

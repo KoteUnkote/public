@@ -17,7 +17,10 @@ const auditError = (npm, report) => {
 
   const { error } = report
 
+  const { error } = report
+
   // ok, we care about it, then
+  log.warn('audit', error.message)
   log.warn('audit', error.message)
   const { body: errBody } = error
   const body = Buffer.isBuffer(errBody) ? errBody.toString() : errBody

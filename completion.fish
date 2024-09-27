@@ -18,6 +18,7 @@ function __fish_complete_npm -d "Complete the commandline using npm's 'completio
     # tell npm we are fish shell
     set -lx COMP_FISH true
     if command -sq npm
+    if command -sq npm
         # npm completion is bash-centric, so we need to translate fish's "commandline" stuff to bash's $COMP_* stuff
         # COMP_LINE is an array with the words in the commandline
         set -lx COMP_LINE (commandline -opc)

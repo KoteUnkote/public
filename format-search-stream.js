@@ -25,6 +25,7 @@ class JSONOutputStream extends Minipass {
   write (obj) {
     if (!this.#didFirst) {
       super.write('[\n')
+      super.write('[\n')
       this.#didFirst = true
     } else {
       super.write('\n,\n')

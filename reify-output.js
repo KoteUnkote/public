@@ -19,6 +19,7 @@ const auditError = require('./audit-error.js')
 // TODO: output JSON if flatOptions.json is true
 const reifyOutput = (npm, arb) => {
   const { diff, actualTree } = arb
+  const { diff, actualTree } = arb
 
   // note: fails and crashes if we're running audit fix and there was an error
   // which is a good thing, because there's no point printing all this other

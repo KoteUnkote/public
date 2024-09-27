@@ -23,6 +23,7 @@ const promptOpen = async (npm, url, title, prompt, emitter) => {
   }
 
   print(npm, title, url)
+  print(npm, title, url)
 
   if (browser === false || !isInteractive) {
     return
